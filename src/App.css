@@ -18,6 +18,11 @@ body {
 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+button{
+  border-radius: 50%;
+ 
+ 
+}
 .rating-form h1{
   color: white;
 } 
@@ -25,15 +30,30 @@ body {
  color:#4c545c;
 }
 .submit-button{
+  
   width: 100%; /* Растягивает кнопку на всю ширину родительского контейнера */
   padding: 10px 20px; /* Внутренние отступы для увеличения кнопки */
   background: #fd7715; /* Цвет кнопки */
   color: black; /* Цвет текста */
   border: none; /* Убирает рамку */
-  border-radius: 5px; /* Скруглённые углы */
+  border-radius: 20px; /* Скруглённые углы */
   font-size: 18px; /* Размер шрифта */
   font-weight: bold; /* Жирный текст */
   cursor: pointer; /* Курсор в виде руки при наведении */
   text-align: center; /* Центровка текста внутри кнопки */
   transition: background-color 0.3s, transform 0.2s; /* Анимация */
+  margin: 20px 0;
+}
+
+.submit-button:hover{
+  background-color: white; /* Цвет кнопки при наведении */
+  transform: scale(1.05); /* Увеличивает размер кнопки при наведении */
+}
+button.selected {
+  border-radius: 50%;
+  
+  background:#fd7715; /* Цвет кнопки, если она выбрана */
+  color: black; /* Цвет текста выбранной кнопки */
+  transform: scale(1.2); /* Увеличение размера для выделения */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Подсветка кнопки */
 }

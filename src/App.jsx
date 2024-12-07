@@ -4,14 +4,12 @@ import ThankYouCard from "./components/ThankYouCard";
 import "./App.css";
 
 const App = () => {
-  // Состояния
-  const [rating, setRating] = useState(null); // Хранит выбранный рейтинг
-  const [isSubmitted, setIsSubmitted] = useState(false); // Отвечает за показ карточки "Thank you"
+  const [rating, setRating] = useState(null);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Обработчик отправки рейтинга
   const handleRatingSubmit = (selectedRating) => {
-    setRating(selectedRating); // Установить выбранный рейтинг
-    setIsSubmitted(true); // Отобразить карточку благодарности
+    setRating(selectedRating);
+    setIsSubmitted(true);
   };
 
   return (
